@@ -1,15 +1,12 @@
-import React from "react";
-import Title from "../Globals/Title";
+import React from "react"
+import Title from "../Globals/Title"
 export default function Contact() {
   return (
     <section className="contact py-5">
       <Title title="contact us" />
       <div className="row">
         <div className="col-10 col-sm-8 col-md-6 mx-auto">
-          <form
-            action="https://formspree.io/learncodetutorial@gmail.com"
-            method="POST"
-          >
+          <form action="https://formspree.io/allon.paz@gmail.com" method="POST">
             {/* name */}
             <div className="form-group">
               <label htmlFor="name">Name</label>
@@ -56,5 +53,5 @@ export default function Contact() {
         </div>
       </div>
     </section>
-  );
+  )
 }
