@@ -1,7 +1,7 @@
-import React from "react";
-import Title from "../Globals/Title";
-import { StaticQuery, graphql } from "gatsby";
-import Product from "./Product";
+import React from "react"
+import Title from "../Globals/Title"
+import { StaticQuery, graphql } from "gatsby"
+import Product from "./Product"
 const getProducts = graphql`
   {
     products: allContentfulCoffeeProduct {
@@ -20,7 +20,7 @@ const getProducts = graphql`
       }
     }
   }
-`;
+`
 
 export default function Products() {
   return (
@@ -33,13 +33,13 @@ export default function Products() {
               <Title title="our products" />
               <div className="row">
                 {data.products.edges.map(({ node: product }) => {
-                  return <Product key={product.id} product={product} />;
+                  return <Product key={product.id} product={product} />
                 })}
               </div>
             </div>
           </section>
-        );
+        )
       }}
     />
-  );
+  )
 }
