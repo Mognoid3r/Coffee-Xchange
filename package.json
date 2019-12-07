@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "2.18.7",
+    "gatsby": "2.18.8-wrap-root-element-static-query.5",
     "gatsby-background-image": "0.2.2",
     "gatsby-image": "2.0.20",
     "gatsby-plugin-manifest": "^2.2.30",
@@ -21,7 +21,9 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.8.0",
-    "react-motion": "0.5.2"
+    "react-motion": "0.5.2",
+    "react-spring": "8.0.27",
+    "styled-components": "4.4.1"
   },
   "devDependencies": {
     "prettier": "^1.19.1"

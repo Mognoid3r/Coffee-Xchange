@@ -5,8 +5,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 import Info from "../components/Home/Info"
+import Details from "../components/Globals/Details"
 
-const IndexPage = ({ data }) => {
+const AboutPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
@@ -15,7 +16,8 @@ const IndexPage = ({ data }) => {
         title="about us"
         styleClass="about-background"
       />
-      <Info />
+      {/* <Info /> */}
+      {/* <Details /> */}
     </Layout>
   )
 }
@@ -29,7 +31,43 @@ export const query = graphql`
         }
       }
     }
+    # menu: allContentfulCoffeeItem {
+    #   edges {
+    #     node {
+    #       id
+    #       title
+    #       description {
+    #         description
+    #       }
+    #       price
+    #       category
+    #       image {
+    #         fixed(width: 50, height: 50) {
+    #           ...GatsbyContentfulFixed_tracedSVG
+    #         }
+    #       }
+    #     }
+    #   }
+    # }
+    # food: allContentfulFoodItem {
+    #   edges {
+    #     node {
+    #       id
+    #       title
+    #       description {
+    #         description
+    #       }
+    #       price
+    #       category
+    #       image {
+    #         fixed(width: 50, height: 50) {
+    #           ...GatsbyContentfulFixed_tracedSVG
+    #         }
+    #       }
+    #     }
+    #   }
+    # }
   }
 `
 
-export default IndexPage
+export default AboutPage

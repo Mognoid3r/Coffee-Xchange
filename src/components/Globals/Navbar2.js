@@ -19,6 +19,21 @@ class Navbar2 extends Component {
         path: "/about",
         text: "about",
       },
+      {
+        id: 3,
+        path: "/products",
+        text: "products",
+      },
+      {
+        id: 4,
+        path: "/contact",
+        text: "contact",
+      },
+      {
+        id: 5,
+        path: "/apply",
+        text: "careers",
+      },
     ],
   }
   navbarHandler = () => {
@@ -31,7 +46,7 @@ class Navbar2 extends Component {
   }
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+      <nav className="navbar-color navbar navbar-expand-lg navbar-dark ">
         <Link to="/" className="navbar-brand ml-5">
           <img src={logo} alt="logo" style={{ width: "35px" }} />
         </Link>

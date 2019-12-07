@@ -46,13 +46,16 @@ h6 {
   justify-content: center;
   background-image: linear-gradient(
     to bottom,
+    rgba(255, 158, 9, 1) 10%,
+    rgba(255, 158, 9, 0.6) 60%,
+    rgba(255, 158, 9, 0.6) 10%,
     /* original Color */
       /* rgba(10,10,10,0.6) 0%,
         rgba(10,10,10,0.6) 60%,
         rgba(10,10,10,1) 100%); */
-      rgba(52, 58, 64, 1) 10%,
+      /* rgba(52, 58, 64, 1) 10%,
     rgba(52, 58, 64, 0.6) 60%,
-    rgba(52, 58, 64, 0.6) 10%
+    rgba(52, 58, 64, 0.6) 10% */
   );
   /* background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5)); */
   background-position: center;
@@ -77,4 +80,9 @@ h6 {
 }
 .footer {
   background: var(--mainDark);
+}
+
+.navbar-color {
+  background-color: #ff9e09;
+  color: #ece8dc;
 }
