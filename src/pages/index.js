@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -16,7 +16,12 @@ const IndexPage = ({ data }) => {
         img={data.img.childImageSharp.fluid}
         title="Coffee Xchange"
         styleClass="default-background"
-      />
+      >
+        <p>lorem asdoifmsdofimasdof asdofiasd foiamsd </p>
+        <Link href="tel:+1-520-751-4739">
+          <button className="btn text-uppercase btn-white">Call & Order</button>
+        </Link>
+      </BackgroundSection>
       <Info />
       <Menu items={data.menu} />
       <Contact />
