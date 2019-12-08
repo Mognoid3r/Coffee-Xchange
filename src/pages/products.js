@@ -4,7 +4,6 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
-import Info from "../components/Home/Info"
 import Products from "../components/Home/Products"
 const ProductPage = ({ data }) => {
   return (
@@ -12,10 +11,10 @@ const ProductPage = ({ data }) => {
       <SEO title="Food" keywords={[`gatsby`, `application`, `react`]} />
       <BackgroundSection
         img={data.img.childImageSharp.fluid}
-        title="Products Page"
+        title="Products"
         styleClass="about-background"
       />
-      <Info />
+
       <Products />
     </Layout>
   )

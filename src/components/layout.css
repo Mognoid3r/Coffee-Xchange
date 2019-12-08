@@ -30,7 +30,7 @@ h6 {
 }
 .cart-icon {
   cursor: pointer;
-  color: var(--mainYellow);
+  /* color: var(--mainYellow); */
   font-size: 2rem;
 }
 .btn-yellow {
@@ -39,6 +39,7 @@ h6 {
 }
 .btn-white {
   color: var(--mainGrey) !important;
+  background-color: transparent !important;
   border-color: var(--mainGrey) !important;
 }
 .btn-yellow:hover {
@@ -94,6 +95,15 @@ h6 {
 }
 .footer {
   background: var(--mainDark);
+}
+
+.product-section {
+  padding-bottom: 140px;
+}
+
+.spacer {
+  display: flex !important;
+  flex-grow: 1 !important;
 }
 
 .navbar-color {

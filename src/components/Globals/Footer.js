@@ -9,7 +9,7 @@ function Footer() {
         <div className="container">
           <div className="row">
             <div className="first-panel col-md-4 col-sm-6">
-              <h4>Coffee Xchange</h4>
+              <h4>Coffee X Change</h4>
               <ul className="list-unstyled">
                 <li>
                   <a href="https://www.google.com/maps/dir/32.2420736,-110.7968/coffee+exchange/@32.2431912,-110.8626545,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x86d66efb832ad5f5:0x42af2cead5277783!2m2!1d-110.846369!2d32.250587">

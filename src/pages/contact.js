@@ -11,7 +11,7 @@ const ProductPage = ({ data }) => {
       <SEO title="Food" keywords={[`gatsby`, `application`, `react`]} />
       <BackgroundSection
         img={data.img.childImageSharp.fluid}
-        title="Products Page"
+        title="Get in Touch"
         styleClass="about-background"
       />
       <Contact />

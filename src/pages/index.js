@@ -18,9 +18,11 @@ const IndexPage = ({ data }) => {
         styleClass="default-background"
       >
         <p>lorem asdoifmsdofimasdof asdofiasd foiamsd </p>
-        <Link href="tel:+1-520-751-4739">
-          <button className="btn text-uppercase btn-white">Call & Order</button>
-        </Link>
+        <button btn-white>
+          <a href="tel:+1-520-751-4739" className="btn text-uppercase">
+            Call & Order
+          </a>
+        </button>
       </BackgroundSection>
       <Info />
       <Menu items={data.menu} />

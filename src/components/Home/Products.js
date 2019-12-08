@@ -28,13 +28,15 @@ export default function Products() {
       query={getProducts}
       render={data => {
         return (
-          <section className="py-5">
-            <div className="container">
-              <Title title="our products" />
-              <div className="row">
-                {data.products.edges.map(({ node: product }) => {
-                  return <Product key={product.id} product={product} />
-                })}
+          <section className=" container product-section">
+            <div className="py-5">
+              <div className="container">
+                <Title title="our products" />
+                <div className="row">
+                  {data.products.edges.map(({ node: product }) => {
+                    return <Product key={product.id} product={product} />
+                  })}
+                </div>
               </div>
             </div>
           </section>
